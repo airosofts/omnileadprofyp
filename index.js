@@ -56,8 +56,8 @@ async function sendProfessionalEmail(email, password) {
     const emailTemplate = `
       <div style="font-family: 'Roboto', Arial, sans-serif; max-width: 700px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden;">
         <!-- Header -->
-        <div style="background-color: #7c7ff3; padding: 20px; text-align: center; color: white; font-size: 24px; font-weight: bold; border-bottom: 2px solid #e5e7eb;">
-          Welcome to Omni Lead Pro
+        <div style="background-color: #D74B3F; padding: 20px; text-align: center; color: white; font-size: 24px; font-weight: bold; border-bottom: 2px solid #e5e7eb;">
+          Welcome to AiroSofts
         </div>
 
         <!-- Body -->
@@ -66,14 +66,14 @@ async function sendProfessionalEmail(email, password) {
           <p style="font-size: 16px; margin-bottom: 20px;">Thank you for choosing <strong>Omni Lead Pro</strong> as your automation partner. We're excited to have you on board and are dedicated to supporting your automation journey.</p>
 
           <div style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; background-color: #f9f9f9; margin-bottom: 30px;">
-            <h2 style="font-size: 18px; color: #7c7ff3; margin-bottom: 15px;">Your Login Credentials</h2>
+            <h2 style="font-size: 18px; color: #D74B3F; margin-bottom: 15px;">Your Login Credentials</h2>
             <p style="margin: 0; font-size: 16px;"><strong>Email:</strong> ${email}</p>
             <p style="margin: 0; font-size: 16px;"><strong>Password:</strong> ${password}</p>
           </div>
 
           <p style="font-size: 16px; margin-bottom: 20px;">You can log in to your dashboard to access your purchased products:</p>
           <div style="text-align: center; margin-top: 20px;">
-            <a href="https://web.omnilead.pro" style="background-color: #7c7ff3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);">Login to Dashboard</a>
+            <a href="https://web.omnilead.pro" style="background-color: #D74B3F; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);">Login to Dashboard</a>
           </div>
         </div>
 
@@ -384,11 +384,12 @@ async function sendExistingUserEmail(email) {
         pass: process.env.EMAIL_PASSWORD, // Your email password
       },
     });
+
     // Email template for existing users
     const emailTemplate = `
       <div style="font-family: 'Roboto', Arial, sans-serif; max-width: 700px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden;">
         <!-- Header -->
-        <div style="background-color: #7c7ff3; padding: 20px; text-align: center; color: white; font-size: 24px; font-weight: bold; border-bottom: 2px solid #e5e7eb;">
+        <div style="background-color: #D74B3F; padding: 20px; text-align: center; color: white; font-size: 24px; font-weight: bold; border-bottom: 2px solid #e5e7eb;">
           Thank You for Your Purchase!
         </div>
 
@@ -400,7 +401,7 @@ async function sendExistingUserEmail(email) {
           <p style="font-size: 16px; margin-bottom: 20px;">As you are already an existing user, you can log in to your dashboard to access your purchased products and manage your subscription:</p>
 
           <div style="text-align: center; margin-top: 20px;">
-            <a href="https://web.omnilead.pro" style="background-color: #7c7ff3; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);">Login to Dashboard</a>
+            <a href="https://web.omnilead.pro/" style="background-color: #D74B3F; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-size: 16px; font-weight: bold; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);">Login to Dashboard</a>
           </div>
         </div>
 
@@ -420,7 +421,7 @@ async function sendExistingUserEmail(email) {
     };
 
     await transporter.sendMail(mailOptions);
-  ///  console.log("Existing user email sent successfully to:", email);
+    ///  console.log("Existing user email sent successfully to:", email);
   } catch (error) {
     console.error("Error sending email to existing user:", error);
     throw error;
