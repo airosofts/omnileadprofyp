@@ -224,18 +224,18 @@ app.get("/success", async (req, res) => {
           payment_plan: subscription.plan?.nickname || "Unknown Plan",
           subid: subscription.id,
           cusid: session.customer,
-          softwarelimit:
+         softwarelimit:
             subscription.plan?.nickname === "basic_asia" ? 20000 :
-            subscription.plan?.nickname === "pro_asia" ? 70000 :
-            subscription.plan?.nickname === "professional_asia" ? 200000 :
+            subscription.plan?.nickname === "pro-asia" ? 70000 :
+            subscription.plan?.nickname === "professional-asia" ? 200000 :
             subscription.plan?.nickname === "Basic" ? 20000 :
             subscription.plan?.nickname === "Pro" ? 70000 :
             subscription.plan?.nickname === "Professional" ? 200000:
             subscription.plan?.nickname === "test" ? 1000 : 0,
           softwarelimitremains:
             subscription.plan?.nickname === "basic_asia" ? 20000 :
-            subscription.plan?.nickname === "pro_asia" ? 70000 :
-            subscription.plan?.nickname === "professional_asia" ? 200000 :
+            subscription.plan?.nickname === "pro-asia" ? 70000 :
+            subscription.plan?.nickname === "professional-asia" ? 200000 :
             subscription.plan?.nickname === "Basic" ? 20000 :
             subscription.plan?.nickname === "Pro" ? 70000 :
             subscription.plan?.nickname === "Professional" ? 200000:
@@ -294,8 +294,8 @@ app.get("/success", async (req, res) => {
 
       const softwareLimit =
       subscription.plan?.nickname === "basic_asia" ? 20000 :
-            subscription.plan?.nickname === "pro_asia" ? 70000 :
-            subscription.plan?.nickname === "professional_asia" ? 200000 :
+            subscription.plan?.nickname === "pro-asia" ? 70000 :
+            subscription.plan?.nickname === "professional-asia" ? 200000 :
             subscription.plan?.nickname === "Basic" ? 20000 :
             subscription.plan?.nickname === "Pro" ? 70000 :
             subscription.plan?.nickname === "Professional" ? 200000:
