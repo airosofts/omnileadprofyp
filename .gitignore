@@ -1,0 +1,13 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json  # Optional: Remove if you commit it
+yarn.lock          # Optional: Remove if you use npm
