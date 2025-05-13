@@ -57,7 +57,7 @@ async function sendProfessionalEmail(email, password) {
       <div style="font-family: 'Roboto', Arial, sans-serif; max-width: 700px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden;">
         <!-- Header -->
         <div style="background-color: #D74B3F; padding: 20px; text-align: center; color: white; font-size: 24px; font-weight: bold; border-bottom: 2px solid #e5e7eb;">
-          Welcome to AiroSofts
+          Welcome to Omni Lead Pro
         </div>
 
         <!-- Body -->
