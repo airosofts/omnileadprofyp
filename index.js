@@ -965,7 +965,7 @@ const axios = require('axios');
 
 // Environment configuration
 // Set this to false for production, true for testing
-const PAYPAL_SANDBOX_MODE = false; 
+const PAYPAL_SANDBOX_MODE = true; 
 
 // PayPal Subscription Plans - Structured by environment and product
 const paypalPlans = {
